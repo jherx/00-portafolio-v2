@@ -19,12 +19,11 @@ body {
   background: #000;
 }
 
-.wrapper-grid {
+.contenedor-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 20rem);
-  grid-template-rows: repeat(1, 1fr);
-  justify-items: start;
-  border: 1px solid #eb2e15;
+  grid-template-columns: repeat(1,20rem);
+  justify-items: center;
+
 }
 
 .card-container {
@@ -35,7 +34,7 @@ body {
   border-radius: 1rem;
   position: relative;
   margin: 0.5rem;
-  min-width: 95vw;
+  min-width: 90vw;
 }
 
 .banner-img {
