@@ -40,7 +40,7 @@ body {
 
 .banner-img {
   position: absolute;
-  background-image: url(https://p4.wallpaperbetter.com/wallpaper/1022/877/276/digital-art-solid-color-wallpaper-preview.jpg);
+  background-image: url(fondo.svg);
   height: 10rem;
   width: 100%;
   background-position: center;
@@ -68,7 +68,6 @@ body {
 
 .description {
   margin: 1rem;
-  padding: 1rem;
   font-size: 0.9rem;
 }
 
@@ -98,7 +97,7 @@ a {
 }
 
 .galeriaConteiner {
-  min-width: 320px;
+  min-width: 280px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -211,6 +210,7 @@ input[type="submit"]:hover {
   body {
     background: #9b3f01;
   }
+ 
   .contenedor-grid {
     grid-template-columns: 475px  1fr 430px;
     grid-template-rows: 400px  1fr  400px; 
@@ -250,6 +250,7 @@ input[type="submit"]:hover {
 /* Pantallas muy grandes (desktops de más de 1200px) */
 @media (min-width: 1200px) {
   body {
-    background: #1b9b01;
+    background: #b5b6b5;
   }
+  
 }
