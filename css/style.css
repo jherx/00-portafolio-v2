@@ -39,7 +39,7 @@ body {
 
 .banner-img {
   position: absolute;
-  background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
+  background-image: url(fondo.svg);
   height: 10rem;
   width: 100%;
   background-position: center;
