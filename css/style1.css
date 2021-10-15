@@ -15,7 +15,11 @@
 
 body {
   color: var(--clr-gray);
-  background: #000;
+  
+    background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm23-adj-21_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=8088e27a74055da9905709da5df32e77");
+    background-size: 100vw;
+    background-repeat: repeat;
+
 
 }
 
@@ -39,7 +43,7 @@ body {
 
 .banner-img {
   position: absolute;
-  background:url("/img/fondo.svg");
+  background:url("https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png");
   height: 10rem;
   width: 100%;
   background-position: center;
@@ -69,8 +73,6 @@ body {
 .descripcion {
   margin: 1rem;
   font-size: 0.9rem;
-  margin: 10px;
-  padding-bottom: 1px;
   text-align: center;
 }
 
@@ -108,7 +110,6 @@ a {
 .galeria-seccion {
   padding: 1px;
   margin: 1px;
-  /* border: 1px solid #000; */
   align-items: center;
 }
 .galeria-seccion  img {
@@ -201,22 +202,18 @@ input[type="submit"]:hover {
 }
 
 
-/* Pantallas medianas (tablets de más de 768px) */
+/* Pantallas medianas (tablets de más de 768px) 
 @media (min-width: 768px) {
-  body {
-    background: #016f9b;
-  }
+ 
 }
 
 /* Pantallas grandes (desktops de más de 992px) */
 @media screen and (min-width: 992px) {
-  body {
-    background: #9b3f01;
-  }
+ 
  
   .contenedor-grid {
     grid-template-columns: 475px  1fr 430px;
-    grid-template-rows: 400px  1fr  400px; 
+    grid-template-rows: 1fr  1fr  400px; 
     grid-gap: 20px;
   }
 
@@ -251,8 +248,11 @@ input[type="submit"]:hover {
 
 /* Pantallas muy grandes (desktops de más de 1200px) */
 @media (min-width: 1200px) {
-  body {
-    background: #b5b6b5;
+ 
+ 
+  .galeria-seccion {
+    padding: 1px;
+    margin: 1px;
+    align-items: center;
   }
-
 }
