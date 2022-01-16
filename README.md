@@ -1,4 +1,4 @@
-# 00-portafolio-v2
+Portafolio
 Proyecto personal 
 Aqui puedes ver mi portafolio en donde encontraras las herremientas que suelo usar , asi como mi conocimiento 
-link: https://jherx.github.io/00-portafolio-v2/
+link: https://jherx.github.io/Portafolio/
