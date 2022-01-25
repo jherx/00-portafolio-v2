@@ -25,7 +25,9 @@
 				<h1 class="name">Gerson Santos</h1>
 				<p class="descripcion">
 					Hola, Mi nombre es Gerson , este es mi Portafolio aqui podras ver mis
-					trabajos y habilidades
+					trabajos y habilidades Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Voluptates adipisci, doloribus et dolorum
+					perspiciatis quod fugiat accusamus atque quia, quasi
 				</p>
 
 				<a
@@ -53,7 +55,7 @@
 							src="https://icones.pro/wp-content/uploads/2021/05/icone-html-orange.png"
 							alt="HyperText Markup Language"
 						/>
-					 </li>
+					</li>
 					<li class="galeria-seccion">
 						<img
 							src="https://i.pinimg.com/originals/3f/83/9a/3f839a4a5688116dfb5f9f81eaa8d067.png"
@@ -79,22 +81,17 @@
 						/>
 					</li>
 					<li class="galeria-seccion">
-						<img
-							src="./img/bootstrap.svg"
-							alt="Boostrap"
-						/>
+						<img src="./img/bootstrap.svg" alt="Boostrap" />
 					</li>
 					<li class="galeria-seccion">
 						<img
 							src="https://static.cdnlogo.com/logos/m/10/mysql.svg"
-							alt="Base de datos" alt="Mysql"
+							alt="Base de datos"
+							alt="Mysql"
 						/>
 					</li>
 					<li class="galeria-seccion">
-						<img
-							src="./img/git-icon.png"
-							alt="GIT"
-						/>
+						<img src="./img/git-icon.png" alt="GIT" />
 						<p>Git</p>
 					</li>
 					<li class="galeria-seccion">
@@ -115,7 +112,6 @@
 					<li class="galeria-seccion">
 						<img src="./img/vsc.svg" alt="visual studio code" />
 					</li>
-
 				</ul>
 			</div>
 
@@ -127,21 +123,19 @@
 					Aqui pordras ver los proyectos y practicas realizados por mi , en
 					donde he usado distintas tecnologias
 				</p>
-        <div class="galeriaConteiner">
-          <div class="prool-seccion">
-          </div>
-        </div>
-	
+				<div class="galeriaConteiner">
+					<div class="prool-seccion"></div>
+				</div>
 			</div>
 
-			<div class="card-container proyectosNw ">
+			<div class="card-container proyectosNw">
 				<h1 class="name">Proyectos Nuevos</h1>
 				<p class="descripcion">
-					Aqui podras ver los nuevos proyectos en los que estoy realizando 
+					Aqui podras ver los nuevos proyectos en los que estoy realizando
 				</p>
-        <div class="galeriaConteiner">
-          <div class="pronew-seccion" id="nuevos"></div>
-        </div>
+				<div class="galeriaConteiner">
+					<div class="pronew-seccion" id="nuevos"></div>
+				</div>
 			</div>
 
 			<!-- Form -->
@@ -149,52 +143,43 @@
 			<div class="form">
 				<div class="card-container wrapper-medium transform">
 					<h1 class="name">Contactame</h1>
-					<form action="">
-						<div class="row">
-							<div class="col-25">
-								<label for="name"> Nombre</label>
-							</div>
-							<div class="col-75">
-								<input
-									class="form__input"
-									type="text"
-									id="fname"
-									name="firstname"
-									placeholder="Nombre"
-								/>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="email">Email</label>
-							</div>
-							<div class="col-75">
-								<input
-									class="form__input"
-									type="email"
-									id="email"
-									name="email"
-									placeholder="correo electronico"
-								/>
-							</div>
-						</div>
+					<form
+						action="https://formsubmit.co/pablodesantos07@gmail.com"
+						method="post"
+					>
+						<input type="hidden" name="_captcha" value="false">
+						<input type="hidden" name="_next" value="https://jherx.github.io/Portafolio/">
+						<label for="name">Nombre</label>
+						<input
+							class="form__input"
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Nombre"
+							required
+						/>
+						<label for="email">Email</label>
+						<input
+							class="form__input"
+							type="email"
+							id="email"
+							name="email"
+							placeholder="correo electronico"
+							required
+						/>
 
-						<div class="row">
-							<div class="col-25">
-								<label for="asunto">Asunto</label>
-							</div>
-							<div class="col-75">
-								<textarea
-									id="asunto"
-									name="asunto"
-									class="form__input"
-									placeholder="Escriba un comentario"
-								></textarea>
-							</div>
-						</div>
-						<div class="row">
-							<input type="submit" value="Enviar" />
-						</div>
+						<label for="mensaje">Mensaje</label>
+						<input type="hidden" name="_subject" value="Nuevo msj!" />
+						<textarea
+							id="mensaje"
+							name="mensaje"
+							class="form__input"
+							placeholder="Escriba un comentario"
+							required
+						></textarea>
+						<input type="submit" type="reset" value="Enviar" />
+
+						
 					</form>
 				</div>
 			</div>
