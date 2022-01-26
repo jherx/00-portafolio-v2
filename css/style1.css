@@ -58,7 +58,7 @@ body {
 	clip-path: circle(50% at 50% 50%);
 	border-radius: 50%;
 	margin-top: 4.5rem;
-	border:thin solid #444;
+	border: thin solid #444;
 	position: relative;
 	z-index: 1111111111;
 	object-fit: cover;
@@ -126,6 +126,7 @@ form {
 }
 /*  */
 input[type='text'],
+input[type='tel'],
 input[type='email'],
 select,
 textarea {
@@ -146,11 +147,6 @@ textarea {
 	outline: none;
 	border-bottom: 5px solid #5e6be0;
 	color: #9913e6;
-}
-
-label {
-	padding: 12px 12px 12px 0;
-	display: inline-block;
 }
 
 input[type='submit'] {
@@ -192,29 +188,6 @@ input[type='submit']:hover {
 	text-shadow: none;
 }
 
-.col-25 {
-	float: left;
-	width: 25%;
-	margin-top: 6px;
-}
-
-.col-75 {
-	float: left;
-	width: 75%;
-	margin-top: 6px;
-}
-.col-75 > textarea {
-	resize: none;
-	height: 100px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-	content: '';
-	display: table;
-	clear: both;
-}
-
 /* Pantallas medianas (tablets de más de 768px) 
 @media (min-width: 768px) {
  
@@ -222,7 +195,6 @@ input[type='submit']:hover {
 
 /* Pantallas grandes (desktops de más de 992px) */
 @media screen and (min-width: 992px) {
-
 	.contenedor-grid {
 		grid-template-columns: repeat(3, minmax(275px, 455px));
 		grid-template-rows: repeat(auto-fill, minmax(385px, 1fr));
@@ -255,11 +227,43 @@ input[type='submit']:hover {
 		grid-column: 1 / span 5;
 		grid-row: 5 / span 5;
 	}
+	.formContainer{
+		width: 100%;
+		margin: 1% ;
+	}
+
+	textarea {
+		resize: none;
+		font-weight: 800;
+	}
+	.input_row {
+		display: flex;
+		/* justify-content: center; */
+	}
+	.input_row-margin {
+		width: 30vw;
+		margin: .99em;
+	}
+
+	.form__input {
+		border: none;
+		border-radius: 7px;
+		border-bottom: 2px solid var(--clr-bluedark);
+		background: transparent;
+		color: var(--clr-gray);
+		width:90vw
+
+	}
+	.form__input:focus {
+		/* background:linear-gradient(to bottom, transparent, #5e6be0); */
+		outline: none;
+		border-bottom: 5px solid #5e6be0;
+		color: #9913e6;
+	}
 }
 
-/* Pantallas muy grandes (desktops de más de 1200px) */ 
+/* Pantallas muy grandes (desktops de más de 1200px) */
 @media (min-width: 1200px) {
-	
 	.contenedor-grid {
 		grid-template-columns: repeat(3, minmax(auto-fill, 500px));
 		grid-template-rows: repeat(auto-fill, minmax(370px, 1fr));
@@ -269,14 +273,16 @@ input[type='submit']:hover {
 	.name {
 		font-size: 1.9em;
 		padding-bottom: 0;
-	}	
-	.descripcion{
+	}
+	.descripcion {
 		font-size: 1.1em;
 		margin: 0;
 		/* padding: 3px; */
 	}
-	.galeriaConteiner{
-		max-height: 382px; 
+	.galeriaConteiner {
+		max-height: 382px;
 		padding-bottom: 1em;
 	}
+
+
 }

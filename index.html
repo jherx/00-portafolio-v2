@@ -19,7 +19,7 @@
 	<body>
 		<!-- contenedor gird -->
 		<section class="contenedor-grid">
-			<header class="card-container cardProfile">
+			<header class="card-container cardProfile ">
 				<div class="banner-img"></div>
 				<img src="./img/otroyo.jpg" alt="profile image" class="profile-img" />
 				<h1 class="name">Gerson Santos</h1>
@@ -39,7 +39,7 @@
 					Descargar CV
 				</a>
 			</header>
-			<div class="card-container cardTxt">
+			<div class="card-container cardTxt ">
 				<h1 class="name">Desarrollador Web</h1>
 				<p class="descripcion">
 					Me especializo en el entorno Front-end, usando las herramientas como
@@ -147,37 +147,38 @@
 						action="https://formsubmit.co/pablodesantos07@gmail.com"
 						method="post"
 					>
-						<input type="hidden" name="_captcha" value="false">
-						<input type="hidden" name="_next" value="https://jherx.github.io/Portafolio/">
-						<label for="name">Nombre</label>
-						<input
-							class="form__input"
-							type="text"
-							id="name"
-							name="name"
-							placeholder="Nombre"
-							required
-						/>
-						<label for="email">Email</label>
-						<input
-							class="form__input"
-							type="email"
-							id="email"
-							name="email"
-							placeholder="correo electronico"
-							required
-						/>
-
-						<label for="mensaje">Mensaje</label>
-						<input type="hidden" name="_subject" value="Nuevo msj!" />
-						<textarea
-							id="mensaje"
-							name="mensaje"
-							class="form__input"
-							placeholder="Escriba un comentario"
-							required
-						></textarea>
-						<input type="submit" type="reset" value="Enviar" />
+						<div class="formContainer">
+							<input type="hidden" name="_captcha" value="false">
+							<input type="hidden" name="_next" value="https://jherx.github.io/Portafolio/">
+							<div class="input_row">
+								<input
+									class="form__input input_row-margin"
+									type="text"
+									id="name"
+									name="name"
+									placeholder="Nombre"
+									required
+								/>
+								<input
+									class="form__input input_row-margin"
+									type="email"
+									id="email"
+									name="email"
+									placeholder="Email"
+									required
+								/>
+								<input  type="tel" name="tel" id="form-field-email" class="form__input input_row-margin" placeholder="Cel." required="required">
+							</div>
+							<input type="hidden" name="_subject" value="Nuevo msj!" />
+							<textarea
+								id="mensaje"
+								name="mensaje"
+								class="form__input"
+								placeholder="Deja un mensaje"
+								required
+							></textarea>
+							<input type="submit" type="reset" value="Enviar" />
+						</div>
 
 						
 					</form>
