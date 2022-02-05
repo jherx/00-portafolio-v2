@@ -1,9 +1,9 @@
 export { proyectos, proyectNuevos }
 
- const proyectos = [
-	{
+  const proyectos = [
+ 	{
 		link: 'https://jherx.github.io/Pokemon-go-counters/',
-		img: 'https://img.icons8.com/clouds/500/pokemon-go.png',
+ 		img: 'https://img.icons8.com/clouds/500/pokemon-go.png',
 		nombre: 'PKM-GO',
 	},
 	{
@@ -45,13 +45,13 @@ export { proyectos, proyectNuevos }
 ];
 
  const proyectNuevos =[{
-		link: 'https://jherx.github.io/faq//',
+		link: 'https://jherx.github.io/ng-prac-store/',
 		img: 'https://firebasestorage.googleapis.com/v0/b/ng-portafolio-ebd80.appspot.com/o/1188479.png?alt=media&token=42af4d6d-daf5-4b47-bef2-190c0005343e',
-		nombre: 'Layout faq',
+		nombre: 'Tienda Angular',
 },
 {
-		link: 'https://jherx.github.io/faq//',
+		link: 'https://github.com/jherx/matrix',
 		img: 'https://firebasestorage.googleapis.com/v0/b/ng-portafolio-ebd80.appspot.com/o/1188479.png?alt=media&token=42af4d6d-daf5-4b47-bef2-190c0005343e',
-		nombre: 'Layout faq',
+		nombre: 'Efecto matrix',
 }
 ]

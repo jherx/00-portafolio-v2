@@ -4,7 +4,7 @@ import {proyectos,proyectNuevos} from'./data.js';
 const contenedor = document.querySelector('.prool-seccion');
 const proyectosNuevos = document.querySelector('.pronew-seccion');
 
-let project=()=> {
+const project=()=> {
 	let proyecto;
 	let proyectoN;
 	for (proyecto in proyectos) {
@@ -14,9 +14,9 @@ let project=()=> {
 		let nombre = data['nombre'];
 		let html = `<div class="galeria-seccion">
 		<a href="${link}">
-		  <img src="${img}" alt=""/>
+		  <img src="${img}" alt="${nombre}"/>
 		   </a>
-		  <P class="descripcion">${nombre}</P>
+		  <P class="descripcion wrap">${nombre}</P>
 		  </div>
 		  `;
 		contenedor.innerHTML += html;
@@ -29,9 +29,9 @@ let project=()=> {
 		let nombre = dat['nombre'];
 		let html = `<div class="galeria-seccion">
 		<a href="${link}">
-		  <img src="${img}" alt=""/>
+		  <img src="${img}" alt="${nombre}"/>
 		   </a>
-		  <P class="descripcion">${nombre}</P>
+		  <p class="descripcion wrap">${nombre}</p>
 		  </div>
 		  `;
 		  proyectosNuevos.innerHTML += html;
